@@ -1,4 +1,4 @@
-# TITLE
+# Lesson 1 - Strings and Traffic Lights
 Today we are going to take our first dive into programming with Python.  Some
 folks may already be familiar with the Python programming language, while most
 of you will not be.  As such, we have three separate coding challenges ranging
