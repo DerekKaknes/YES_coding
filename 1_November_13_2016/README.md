@@ -23,7 +23,12 @@ have questions) and try to code up a working solution!
 ##Intermediate - Advanced Strings and Regular Expressions (regex)
 One of the most common - and potentially most frustrating - tasks in programming
 is to search through a string or list of strings in order to find and/or replace
-certain values.  
+certain values.  A great resource to start or brush up on regex rules is
+[Codecademy's](https://www.codecademy.com/courses/python-intermediate-en-HJJev/0/1)
+online python course for using regex.  Try to complete the exmaples in this
+short course and then test your knowledge on the challenges found under
+`intermediate_regex.py`.  If you have questions, you can always refer to the
+[`regex` documentation](https://docs.python.org/2/library/re.html).
 
 ##Expert - Computer Vision: Traffic Light Challenge
 For our first project, we are going to look into using Computer Vision to aid in
@@ -32,5 +37,21 @@ tasked with developing a program that will process an image from your computer's
 webcam and make a decision on whether the color in the image is (predominately)
 red, yellow or green.  Based on that determination, your program should inform
 your robot to either Stop!, Slow Down!, or Go!, respectively.  
+
+You can find starter code under `expert_traffic_light.py`, which will repeatedly
+capture images from your computers webcam and pass them to your processing
+function, which is called `determine_light_color`.  Currently, that function
+will always return a valu of `'red'`; your job is to write code that will
+analyze the RGB image in order to make a determination as to what color is
+actually present.
+
+For guidance, you may want to start by reading about RBG images and how they are
+stored as arrays of pixel values.  You may also want to famliarize yourself a
+little bit with python's `numpy` package and `numpy.array` data structure, which 
+we are using to store and analyze our images.  For this project, you should not
+need to use any particularly complex data analytics algorithms; however, I would
+encourage you to read more about the tools that company's like Google, Nvidia, Tesla and
+Uber are using in developing their own autonomous vehicles.
+
 
 

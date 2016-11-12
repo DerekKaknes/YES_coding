@@ -29,16 +29,18 @@ class RobotCar:
         time.sleep(2)
         im.close()
         for proc in psutil.process_iter():
-            if proc.name() == 'Preview':
+            if proc.name() == 'Preview' or proc.name().lower() == 'display':
                 proc.kill()
         light_color = self.determine_light_color(im)
         self.process_action(light_color)
 
     def capture_image(self):
-        rval, frame = self.vc.read()
-        if rval:
-            im = Image.fromarray(frame, mode='RGB')
-        return im
+        rval = False
+        while not rval:
+            rval, frame = self.vc.read()
+            if rval:
+                im = Image.fromarray(frame, mode='RGB')
+            return im
 
     def process_action(self, light_color):
         if light_color == 'green':
