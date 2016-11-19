@@ -6,11 +6,11 @@ defined as a set of actions that takes one or more inputs and returns one or
 more outputs.
 ## Beginners - Functions
 In python, functions are defined using:
- `
+ ```pyton
 def name_of_function(inputs):
    # Do stuff
    return output
-`
+```
 
 
 ## Intermediate - Markov Sentence Completion
