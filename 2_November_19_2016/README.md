@@ -36,16 +36,19 @@ expect the following:
 ```python
 add_two_numbers(2, 3)
 # 5
+add_two_numbers(100, 50)
+# 150
 ```
-
 In today's lesson, we are going to work through the [codecademy course on python
 functions](https://www.codecademy.com/courses/python-beginner-c7VZg/0/1?curriculum_id=4f89dab3d788890003000096).
-After we have completed that class (should take ~30 minutes), we will move on to today's coding challenge.  In today's challenge, we
+After we have completed that course (should take ~30 minutes), we will move on to today's coding challenge.  
+In today's challenge, we are going to build a series of functions that compute
+mathematical and logical functions.  You can find the starter code in
+`beginner_functions.py`.
 
 ## Expert - Object Oriented Design: Working with Classes
 Based on your level of experience, you may or may not be familiar with Classes.
 We will have a series of challenges and design patterns that utilize classes and
-objects.  Take a look at the codecademy course on python classes
-(https://www.codecademy.com/courses/python-intermediate-en-WL8e4/0/1?curriculum_id=4f89dab3d788890003000096).
+objects.  Take a look at the [codecademy course on python classes](https://www.codecademy.com/courses/python-intermediate-en-WL8e4/0/1?curriculum_id=4f89dab3d788890003000096).
 If you are comfortable with this content, then you can advance to the code
 challenges with classes and inheritance.

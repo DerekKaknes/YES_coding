@@ -30,6 +30,18 @@ def remainder(dividend, divisor):
 # Lastly, define a function that returns whether or not a number is prime.  
 # Remember that a number is prime if and only if its only factors are 1 and itself
 def is_prime(number):
-    prime = False
+    prime = None
     pass
+
+if __name__ == '__main__':
+    print "testing multiply: (3,4) should return 12, did return {}".format(multiply(3,4))
+    print "testing division: (10,2) should return 5, did return {}".format(division(10,2))
+    print "testing division: (10,0) should print warning and return None, did return {}".format(division(10,0))
+    print "testing remainder: (10,3) should return 1, did return {}".format(remainder(10,3))
+    print "testing remainder: (9,3) should return 0, did return {}".format(remainder(9,3))
+    print "testing is_prime: 1 should return False, did return {}".format(is_prime(1))
+    print "testing is_prime: 9 should return False, did return {}".format(is_prime(9))
+    print "testing is_prime: 7 should return True, did return {}".format(is_prime(7))
+
+
 
