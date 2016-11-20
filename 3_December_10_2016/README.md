@@ -18,6 +18,33 @@ the coding problems that are presented;
 comfortable with.
 
 ### Introduction to Classes and OOP
+Last lesson, we built some fuctions that could be useful in the future, like
+`cube` and `one_good_turn`, and we also learned how to load those function
+using `from ____ import ____`.  Ordering and combining several functions into a
+single set of commands is one way to organize your code (often called
+**Functional Programming**), but a different - and very common - way of
+organizing your code is through **Objects**.  In Python, we create `objects`
+from `classes`.  A `class` is pretty simple - it is a group of abilities or
+attributes that are shared by a type of object.  It is most easily demonstrated
+through examples:
+
+My first car was a Toyota Avalon.  My car is one of thousands (maybe
+millions) of Toyota Avalons that exist in the world, but each of them shares
+common traits and abilities: they are the same size, have the same number
+wheels, can drive forward and backward, can reach the same top speed at the
+same accelleration, etc.  Thus, my car is an `instance` of the
+Toyota Avalon `class`.  There might be millions of `instances` (millions of
+individual Toyota Avalon cars), but they are all of the same `class`.
+
+In a sports video game (like FIFA or Madden or NBA2K), there is usually an
+option to create a player.  If you choose to create a player, they will often
+give you the ability to adjust and customize specific attributes like the
+player's height, weight, hairstyle, uniform style, etc.  Each player you create
+is an `instance` of the `class` Player.  You can create hundreds of instances,
+but they are all of the single Player class.
+
+#### Header?
+
 ### Codecademy - Python Classes
 ### Coding Challenges - `beginner_classes.py`
 ## Advanced - Common Design Patterns: Dependency Injection
