@@ -113,8 +113,7 @@ tom_brady = FootballPlayer('Tom Brady', 6.33, 225)
 rob_gronkowski = FootballPlayer('Rob Gronkowski', 6.50, 265)
 joe_montana = FootballPlayer("Joe Montana", 6.16, 205)
 
-print "Player named {} is {} feet tall and weighs {}
-pounts".format(tom_brady.name, tom_brady.height, tom_brady.weight)
+print "Player named " + tom_brady.name + " is " + tome_brady.height + "feet tall and weighs " + tom_brady.weight + " pounds"
 # Player named Tom Brady is 6.33 feet tall and weighs 225 pounds
 ```
 
