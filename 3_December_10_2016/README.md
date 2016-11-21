@@ -33,9 +33,10 @@ My first car was a Toyota Avalon.  My car is one of thousands (maybe
 millions) of Toyota Avalons that exist in the world, but each of them shares
 common traits and abilities: they are the same size, have the same number
 wheels, can drive forward and backward, can reach the same top speed at the
-same accelleration, etc.  Thus, my car is an `object` of the
+same acceleration, etc.  Thus, my car is an `object` of the
 Toyota Avalon `class`.  There might be millions of `objects` (millions of
-individual Toyota Avalon cars), but they are all of the same `class`.
+individual Toyota Avalon cars), but they are all of the same `class` of Toyota
+Avalon.
 
 In a sports video game (like FIFA or Madden or NBA2K), there is usually an
 option to create a player.  If you choose to create a player, they will often
@@ -91,9 +92,10 @@ things about this line.  First, the `__init__` function (short for "initialize")
 is a special function that the `FootballPlayer` class uses to "initialize" (aka
 create) new objects (aka to create new players).  Second, you probably notice
 that it is surrounded by `__`, that is because python
-does not want you to accidentally overwrite this function.  Lastly, you should also
+does not want you to accidentally overwrite this function, so it puts two
+underscores (`__`) before and after it as a kind of warning for us.  Lastly, you should also
 notice that the first input to `__init__` is `self`.  What is `self`?  `self`
-is literally the object referencing itself.  Don't worry too much about it right
+is literally the new object referencing itself.  Don't worry too much about it right
 now, but you will see `self` A LOT in Python. It may feel strange at first, but
 you will gain comfort with what it means over time.
 ```python
@@ -104,8 +106,10 @@ you will gain comfort with what it means over time.
 These lines defines what `attributes` each object of the class has and gives
 each a value.  So for our
 `FootballPlayer` class, we want to create and assign values for `name`,
-`height`, and `weight`.
-
+`height`, and `weight`.  Notice that we reference each `attribute` through the
+`self.<attribute_name>` notation.  This just tells the object (the player) that
+these attributes are referencing itself, and not some other `FootballPlayer`.
+---
 Finally, let's take a look at how we might use our new `FootballPlayer` class to
 create new football players.
 ```python
