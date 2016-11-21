@@ -109,7 +109,9 @@ each a value.  So for our
 `height`, and `weight`.  Notice that we reference each `attribute` through the
 `self.<attribute_name>` notation.  This just tells the object (the player) that
 these attributes are referencing itself, and not some other `FootballPlayer`.
+
 ---
+
 Finally, let's take a look at how we might use our new `FootballPlayer` class to
 create new football players.
 ```python
