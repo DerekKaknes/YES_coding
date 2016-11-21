@@ -28,24 +28,24 @@ from `classes`.  A `class` is pretty simple - it is a group of abilities or
 attributes that are shared by a type of object.  It is most easily demonstrated
 through examples:
 
-### The Difference Between a Class and an Instance
+### The Difference Between a Class and an Object
 My first car was a Toyota Avalon.  My car is one of thousands (maybe
 millions) of Toyota Avalons that exist in the world, but each of them shares
 common traits and abilities: they are the same size, have the same number
 wheels, can drive forward and backward, can reach the same top speed at the
-same accelleration, etc.  Thus, my car is an `instance` of the
-Toyota Avalon `class`.  There might be millions of `instances` (millions of
+same accelleration, etc.  Thus, my car is an `object` of the
+Toyota Avalon `class`.  There might be millions of `objects` (millions of
 individual Toyota Avalon cars), but they are all of the same `class`.
 
 In a sports video game (like FIFA or Madden or NBA2K), there is usually an
 option to create a player.  If you choose to create a player, they will often
 give you the ability to adjust and customize specific attributes like the
 player's height, weight, hairstyle, uniform style, etc.  Each player you create
-is an `instance` of the Player  `class`.  You can create hundreds of instances,
+is an `object` of the Player  `class`.  You can create hundreds of objects,
 but they are all of the single Player class.
 
-#### Quiz: Differentiating Classes and Instances
-For each question, decide whether the blank should be `instance` or `class` and
+#### Quiz: Differentiating Classes and objects
+For each question, decide whether the blank should be `object` or `class` and
 discuss why with your neighbor.
 
 1. Kevin Durant is an ______ of the `BasketPlayer` ______.
@@ -60,7 +60,7 @@ are ________.
 ### `attributes` = Characteristics
 Let's return to our example of creating a player in Madden (you can think of a
 different game if you are not an NFL fan).  Every time we create a player, we
-are "initializing" an instance of the `FootballPlayer` class.  But what does that
+are "initializing" an object of the `FootballPlayer` class.  But what does that
 mean?  What characteristics and abilities does a `FootballPlayer` have?  Well, to
 start they probably need to have a `name`.  In coding, we would say that the
 `FootballPlayer` class has an `attribute` called "name".  The `FootballPlayer`
@@ -89,7 +89,7 @@ Now, this line looks a little crazy - but it's actually just another function th
 the `def function_name(inputs):` notation.  However, there are a couple unique
 things about this line.  First, the `__init__` function (short for "initialize")
 is a special function that the `FootballPlayer` class uses to "initialize" (aka
-create) new instances (aka to create new players).  Second, you probably notice
+create) new objects (aka to create new players).  Second, you probably notice
 that it is surrounded by `__`, that is because python
 does not want you to accidentally overwrite this function.  Lastly, you should also
 notice that the first input to `__init__` is `self`.  What is `self`?  `self`
@@ -101,7 +101,7 @@ you will gain comfort with what it means over time.
     self.height = height
     self.weight = weight
 ```
-These lines defines what `attributes` each instance of the class has and gives
+These lines defines what `attributes` each object of the class has and gives
 each a value.  So for our
 `FootballPlayer` class, we want to create and assign values for `name`,
 `height`, and `weight`.
@@ -139,8 +139,8 @@ class FootballPlayer:
     # This method takes an input of 'target' to identify who to tackle
     print self.name " is tackling " + target + "!"
 ```
-Every instance of a class has access to its `methods` and can call those methods
-using `<instance_name>.<method_name>()` notation.  Let's look at an example from
+Every object of a class has access to its `methods` and can call those methods
+using `<object_name>.<method_name>()` notation.  Let's look at an example from
 `FootballPlayer`:
 ```python
 richard_sherman = FootballPlayer("Richard Sherman", 6.10, 230)
