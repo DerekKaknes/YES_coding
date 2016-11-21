@@ -119,6 +119,26 @@ print "Player named " + tom_brady.name + " is " + tome_brady.height + "feet tall
 
 
 ### `methods` = Abilities
+In addition to having common `attributes`, classes will often times often have
+common abilities.  For example, a `FootballPlayer` might have an ability called
+`run` or `tackle`.  In python, we call these abilities `methods`.  `methods` are
+simply functions that are defined within a class.  Defining methods is very
+similar to defining functions, except that the first input is (usually) `self`.
+```python
+class FootballPlayer:
+  def __init__(self, name, height, weight):
+    self.name = name
+    self.height = height
+    self.weight = weight
+
+  def run(self):
+    # This is a method called 'run'
+    print self.name + "is running!"
+
+  def tackle(self, target):
+    # This method takes an input of 'target' to identify who to tackle
+    print self.name " is tackling " + target + "!"
+```
 
 ### Codecademy - Python Classes
 ### Coding Challenges - `beginner_classes.py`
