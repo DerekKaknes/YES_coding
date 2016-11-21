@@ -62,12 +62,13 @@ Let's return to our example of creating a player in Madden (you can think of a
 different game if you are not an NFL fan).  Every time we create a player, we
 are "initializing" an instance of the `FootballPlayer` class.  But what does that
 mean?  What characteristics and abilities does a `FootballPlayer` have?  Well, to
-start they probably need to have a name.  In coding, we would say that the
+start they probably need to have a `name`.  In coding, we would say that the
 `FootballPlayer` class has an `attribute` called "name".  The `FootballPlayer`
 may have many more `attributes` related to physical appearance: `height`,
 `weight`, `hairstyle`, `eye_color`, `skin_color`, and on and on.  
 
-In python, we would define the `FootballPlayer` class as follows:
+In python, we would define the `FootballPlayer` class and its associated
+`attributes` like this:
 ```python
 class FootballPlayer:
   def __init__(self, name, height, weight):
@@ -87,20 +88,35 @@ This line defines the new class called 'FootballPlayer'.  It is similar to the
 Now, this line looks a little crazy - but it's actually just another function that uses
 the `def function_name(inputs):` notation.  However, there are a couple unique
 things about this line.  First, the `__init__` function (short for "initialize")
-is a special function that classes use to "initialize" new instances of the
-class.  You probably notice that it is surrouned by `__`, that is because python
-does not want you to accidentally overwrite that function.  You should also
+is a special function that the `FootballPlayer` class uses to "initialize" (aka
+create) new instances (aka to create new players).  Second, you probably notice
+that it is surrounded by `__`, that is because python
+does not want you to accidentally overwrite this function.  Lastly, you should also
 notice that the first input to `__init__` is `self`.  What is `self`?  `self`
 is literally the object referencing itself.  Don't worry too much about it right
-now.
+now, but you will see `self` A LOT in Python. It may feel strange at first, but
+you will gain comfort with what it means over time.
 ```python
     self.name = name
     self.height = height
     self.weight = weight
 ```
-This line defines what `attributes` each instance of the class has.  So for our
+These lines defines what `attributes` each instance of the class has and gives
+each a value.  So for our
 `FootballPlayer` class, we want to create and assign values for `name`,
 `height`, and `weight`.
+
+Finally, let's take a look at how we might use our new `FootballPlayer` class to
+create new football players.
+```python
+tom_brady = FootballPlayer('Tom Brady', 6.33, 225)
+rob_gronkowski = FootballPlayer('Rob Gronkowski', 6.50, 265)
+joe_montana = FootballPlayer("Joe Montana", 6.16, 205)
+
+print "Player named {} is {} feet tall and weighs {}
+pounts".format(tom_brady.name, tom_brady.height, tom_brady.weight)
+# Player named Tom Brady is 6.33 feet tall and weighs 225 pounds
+```
 
 
 ### `methods` = Abilities
