@@ -139,6 +139,16 @@ class FootballPlayer:
     # This method takes an input of 'target' to identify who to tackle
     print self.name " is tackling " + target + "!"
 ```
+Every instance of a class has access to its `methods` and can call those methods
+using `<instance_name>.<method_name>()` notation.  Let's look at an example from
+`FootballPlayer`:
+```python
+richard_sherman = FootballPlayer("Richard Sherman", 6.10, 230)
+richard_sherman.run()
+# Richard Sherman is running!
+richard_sherman.tackle("Tom Brady")
+# Richard Sherman is tackling Tom Brady!
+```
 
 ### Codecademy - Python Classes
 ### Coding Challenges - `beginner_classes.py`
