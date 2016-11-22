@@ -155,7 +155,20 @@ richard_sherman.run()
 richard_sherman.tackle("Tom Brady")
 # Richard Sherman is tackling Tom Brady!
 ```
+#### Quiz: More Methods
+
+1. With your neighbors, discuss and come up with a couple more methods that the
+`FootbalPlayer` class might have.  
+2. Other than cars and athletes, can you think of another object that you might
+represent as a class?  What would be some of its attributes and methods?
+3. What would be some of the attributes and methods that the `YESStudent` class
+might have?
 
 ### Codecademy - Python Classes
+Now that you have an idea of classes, go over to [codecademy](https://www.codecademy.com/courses/python-intermediate-en-WL8e4/0/1) to practice a
+little more with classes.
 ### Coding Challenges - `beginner_classes.py`
+If you finish the codecademy section, then take a look at `beginner_classes.py`
+for some additional work with classes.
 ## Advanced - Common Design Patterns: Dependency Injection
+
